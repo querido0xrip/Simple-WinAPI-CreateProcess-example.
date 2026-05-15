@@ -1,10 +1,7 @@
 #include <iostream>
 #include <windows.h> 
-
-
 // startupinfo, sw_show
 // resultado = Ejecutar notepad.exe sin mostrar la ventana al usuario.
-
 int main () {
 
 PROCESS_INFORMATION pi = {0};// recibe los handles y informacion del proceso.
@@ -40,11 +37,6 @@ else {
 
     std::cout<<"error: " << GetLastError() << "\n";
 }
-
-
-
-
-
  return 0;
 }
 
